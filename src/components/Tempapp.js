@@ -24,8 +24,10 @@ fetchApi()
     return(
       <>
      <div className="box">
+      <h1>Weather Reports</h1>
        <div className="inputData">
          <input type ="search" value={search}
+        placeholder="Enter City,State and Country"
          className="inputField"
          onChange={(event)=>{ setSearch(event.target.value)
 
@@ -34,7 +36,7 @@ fetchApi()
    
    {
      !city ? (
-       <p className="errorMsg">  Write your city Name</p>
+       <p className="errorMsg">Data Not Found</p>
      ) :(
        <div>
        <div className="info">
